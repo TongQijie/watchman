@@ -6,7 +6,7 @@ namespace Watchman
     {
         public static void Main(string[] args)
         {
-            ConsoleInstance.Default.Run(args, true);
+            ConsoleAppInstance.Default.Run(args, true);
         }
     }
 }

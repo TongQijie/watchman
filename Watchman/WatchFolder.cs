@@ -20,9 +20,9 @@ namespace Watchman
             Path = path;
             Parent = parent;
 
-            _FileSystemMonitor = ContainerManager.Default.Resolve<IFileSystemMonitor>();
-            _FileSystemHelper = ContainerManager.Default.Resolve<IFileSystemHelper>();
-            _Context = ContainerManager.Default.Resolve<IContext>();
+            _FileSystemMonitor = DependencyContainer.Resolve<IFileSystemMonitor>();
+            _FileSystemHelper = DependencyContainer.Resolve<IFileSystemHelper>();
+            _Context = DependencyContainer.Resolve<IContext>();
 
             _FileSystemMonitor.Add(this, (_Context.Source + "/" + Path).FullPath(), Changed, Created, Deleted, Renamed);
 

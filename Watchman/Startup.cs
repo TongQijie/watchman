@@ -17,7 +17,7 @@ namespace Watchman
                 return 1;
             }
 
-            var context = ContainerManager.Default.Resolve<IContext>();
+            var context = DependencyContainer.Resolve<IContext>();
             
             context.Source = args[0].FullPath();
             context.Target = args[1].FullPath();
