@@ -10,8 +10,6 @@
 
 3. 编译项目代码: `dotnet build`
 
-4. 从nuget目录中拷贝引用的库(Guru.dll)到输出目录
+4. 执行运行: `dotnet Watchman.dll "this\is\source\folder" "this\is\target\folder"`
 
-5. 开始调试
-
-6. 发布代码: `dotnet publish`
+5. 发布代码: `dotnet publish`
